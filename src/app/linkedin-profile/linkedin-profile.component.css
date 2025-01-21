@@ -1,0 +1,34 @@
+app-header-linkedin {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: white;
+    transition: box-shadow 0.2s;
+}
+
+app-header-linkedin.scrolled {
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15);
+}
+
+.container {
+    color: #171717;
+    display: flex;
+    gap: 20px;
+    max-width: 1128px;  /* LinkedIn's standard max-width */
+    margin: 90px auto;     /* Centers the container */
+    padding: 0 24px;    /* Matches LinkedIn's side padding */
+}
+
+.profile-container {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.other-container {
+    flex: 1;  /* Takes 1/3 of available space */
+}
+

@@ -1,0 +1,37 @@
+.container {
+    max-width: 1168px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.main-profile-cards {
+    flex: 2;
+}
+
+.other-profile-cards {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+app-linkedin-card{
+    flex: 1;
+}
+app-leetcode-card{
+    flex: 1;
+}
+
+app-github-card{
+    flex:1;
+}
+
+.dummy{
+    flex: 1;
+}

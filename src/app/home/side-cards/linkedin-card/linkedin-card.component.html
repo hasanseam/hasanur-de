@@ -1,0 +1,86 @@
+<style>
+.profile-img {
+    height: 80px;
+    padding: 2px;
+    border: 3px solid #0a66c2;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.img-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 150px;
+}
+
+.brand-logo img{
+    height: 30px;
+}
+
+.linkedin-card{
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap:2px;
+    margin: 10px;
+}
+.short-details{
+    font-size: 14px;
+}
+.title{
+    font-size: 16px;
+}
+.address{
+    font-size: 12px;
+    color: var(--text-secondary-linnkedin);
+}
+
+.view-more-btn{
+    font-size: 12px;
+    background-color: #0a66c2;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 30px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.view-more-btn:hover{
+    background-color: #004182;
+    cursor: pointer;
+}
+
+.tooltip {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    pointer-events: none;
+    z-index: 1000;
+    transform: translate(10px, 10px);
+    white-space: nowrap;
+}
+
+</style>
+<div class="linkedin-card card-shadow" (mousemove)="showTooltip($event)" (mouseleave)="hideTooltip()">
+    <div class="img-container">
+        <img class="profile-img" src="/src/assets/profile-pic.png" alt="">
+        <div class="brand-logo">
+            <img src="/src/assets/linkedin-short-logo.png" alt="">
+        </div>
+    </div>
+    <div class="title">Hasanur Seam</div>
+    <div class="short-details">Software Engineer | NodeJs | Angular |...</div>
+    <div class="address">Bremen, Germany</div>
+    <div><button class="view-more-btn" (click)="navigateToLinkedin()">View More</button></div>
+    @if (isTooltipVisible) {
+        <div class="tooltip" [style.left.px]="tooltipX" [style.top.px]="tooltipY">
+            LinkedIn Profile
+        </div>
+    }
+</div>

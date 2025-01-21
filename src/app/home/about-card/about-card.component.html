@@ -1,0 +1,27 @@
+<div class="about-card card-shadow">
+    <div class="about-title title">Intro</div>
+    <div class="about-details">
+        <div class="content" [class.expanded]="isExpanded">
+            <p>Hello, I'm Hasanur—a passionate software developer dedicated to creating cutting-edge 
+                mobile and web applications. 
+                Currently pursuing my MSc in Media Informatik at the University of Bremen, Germany,
+                 I am committed to expanding my expertise in innovative technologies.
+                </p>
+                <p>
+                    Hello, I'm Hasanur—a passionate software developer dedicated to creating cutting-edge 
+                        mobile and web applications. 
+                        Currently pursuing my MSc in Media Informatik at the University of Bremen, Germany,
+                         I am committed to expanding my expertise in innovative technologies.
+                    
+                </p>
+                <p>Hello, I'm Hasanur—a passionate software developer dedicated to creating cutting-edge 
+                    mobile and web applications. 
+                    Currently pursuing my MSc in Media Informatik at the University of Bremen, Germany,
+                     I am committed to expanding my expertise in innovative technologies.
+                </p>
+        </div>
+        <button class="see-more" (click)="toggleExpand()">
+            ...see {{ isExpanded ? 'less' : 'more' }}
+        </button>
+    </div>
+</div>

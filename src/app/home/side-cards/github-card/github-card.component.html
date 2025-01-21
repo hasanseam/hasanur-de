@@ -1,0 +1,79 @@
+<style>
+    .profile-img {
+        height: 80px;
+        padding: 2px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    
+    .img-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        min-width: 150px;
+    }
+    
+    .brand-logo img{
+        height: 30px;
+    }
+    
+    .leetcode-card{
+        background-color: white;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap:2px;
+        margin: 10px;
+        height: 210px;
+        position: relative;
+    }
+
+
+    .short-details{
+        font-size: 14px;
+        color: #262626bf;
+    }
+    .title{
+        font-size: 16px;
+        color: rgb(38,38,38);
+    }
+    .address{
+        font-size: 12px;
+        color: var(--text-secondary-linnkedin);
+    }
+    
+    .view-more-btn{
+        font-size: 12px;
+        background-color: #ffa116;
+        color: white;
+        padding: 8px 12px;
+        border: none;
+        border-radius: 30px;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+    
+    .view-more-btn:hover{
+        background-color: #e68900;
+        cursor: pointer;
+    }
+    
+    </style>
+    <div class="leetcode-card card-shadow" (mousemove)="showTooltip($event)" (mouseleave)="hideTooltip()">
+        <div class="img-container">
+            <img class="profile-img" src="/src/assets/git-image.jpg" alt="">
+            <div class="brand-logo">
+                <img src="/src/assets/github-mark.png" alt="">
+            </div>
+        </div>
+        <div class="title">Hasanur Seam</div>
+        <div class="short-details">Rank 1,254,234</div>
+        <div class="address">82/3430 Solved</div>
+        <div><button class="view-more-btn">View More</button></div>
+        @if (isTooltipVisible) {
+            <div class="tooltip" [style.left.px]="tooltipX" [style.top.px]="tooltipY">
+                LeetCode Profile
+            </div>
+        }
+    </div>
+    

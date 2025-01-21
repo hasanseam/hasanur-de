@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { NavigationEnd, NavigationStart, Router, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,4 +9,17 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'hasanur-de';
+  loading = false;
+
+  constructor(private router: Router) {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationStart) {
+        this.loading = true;
+      }
+      if (event instanceof NavigationEnd) {
+        this.loading = false;
+      }
+    });
+  }
 }
+

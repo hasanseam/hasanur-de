@@ -1,0 +1,76 @@
+.cover-image {
+    width: 100%;
+    height: 200px;  /* Set a fixed height */
+}
+
+.cover-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures the image covers the entire space */
+}
+
+.profile-card {
+    width: 100%;
+    margin: 10px 0px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: var(--background-color-home-profile);
+    color: var(--text-primary-color-home-profile);
+    position: relative;
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 16px;  /* Add padding for better spacing */
+}
+
+.introduction {
+    flex: 2;
+    display: flex;  /* Enable flex display */
+    flex-direction: column;
+    gap: 8px;  /* Add gap between text elements */
+}
+
+.workplace {
+    flex:1;
+    display: flex;  /* Enable flex display */
+    flex-direction: column;
+    gap: 8px;  /* Add gap between text elements */
+}
+.title{
+    color: var(--text-secondary-color-home-profile);
+    font-size: 30px;
+    font-weight: 400;
+    padding: 16px 0px 0px 16px;
+}
+.work, .location, .home-location {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.work img, .location img, .home-location img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.profile-img {
+    padding: 2px;
+    border: 3px solid var(--text-secondary-color-home-profile);
+    border-radius: 50%;
+    background-color: white;
+    height: 150px;
+    width: 150px;
+}
+
+.profile-img-container {
+    position: absolute;
+    top:122px;
+    left: 275px;
+    background-color: white;
+    border-radius: 50%;
+}
