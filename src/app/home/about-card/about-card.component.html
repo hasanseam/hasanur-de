@@ -1,27 +1,79 @@
 <div class="about-card card-shadow">
-    <div class="about-title title">Intro</div>
-    <div class="about-details">
-        <div class="content" [class.expanded]="isExpanded">
-            <p>Hello, I'm Hasanur—a passionate software developer dedicated to creating cutting-edge 
-                mobile and web applications. 
-                Currently pursuing my MSc in Media Informatik at the University of Bremen, Germany,
-                 I am committed to expanding my expertise in innovative technologies.
-                </p>
-                <p>
-                    Hello, I'm Hasanur—a passionate software developer dedicated to creating cutting-edge 
-                        mobile and web applications. 
-                        Currently pursuing my MSc in Media Informatik at the University of Bremen, Germany,
-                         I am committed to expanding my expertise in innovative technologies.
-                    
-                </p>
-                <p>Hello, I'm Hasanur—a passionate software developer dedicated to creating cutting-edge 
-                    mobile and web applications. 
-                    Currently pursuing my MSc in Media Informatik at the University of Bremen, Germany,
-                     I am committed to expanding my expertise in innovative technologies.
-                </p>
-        </div>
-        <button class="see-more" (click)="toggleExpand()">
-            ...see {{ isExpanded ? 'less' : 'more' }}
-        </button>
+  <div class="about-title title">Intro</div>
+  <div class="about-details">
+    <div class="content" [class.expanded]="isExpanded">
+      <p>
+        Hello, I'm Hasanur—a passionate software engineer dedicated to creating
+        cutting-edge mobile and web applications. Currently pursuing my MSc in
+        Media Informatik at the University of Bremen, Germany, I am committed to
+        expanding my expertise in innovative technologies.
+      </p>
+      <p>
+        <strong>Key Skills & Expertise</strong>
+      </p>
+      <p>
+        <strong>Backend & Web Development</strong>
+        With experience in Node.js, Java, Angular and React, I build robust backends and
+        single-page web applications. My skills include:
+      </p>
+        <ul>
+            <li>
+                 <strong>UI & Responsive Design</strong>
+                I design engaging interfaces using HTML, CSS, and Bootstrap, ensuring
+                responsive, user-friendly designs across devices.
+            </li>
+            <li>
+                <strong>Database Management:</strong>
+                Proficient in PostgreSQL and MongoDB for scalable data storage.
+            </li>
+            <li>
+                <strong>AWS Cloud Services:</strong>
+                Skilled in EC2, RDS, Cognito, S3, API Gateway, Amazon
+                DynamoDB and Lambda for secure, scalable infrastructures. Expert in
+                building Serverless Applications with Nodejs using Lambda.
+            </li>
+            <li>
+                <strong>Containerization:</strong>
+                Expertise in Docker and Kubernetes for seamless
+                application deployment and management. CI/CD Pipelines: Proficient in
+                Github Actions for automating code integration, testing, and deployment.
+            </li>
+            <li>
+                <strong>CI/CD Pipelines:</strong>
+                Proficient in Github Actions for automating code integration, testing, and deployment.
+            </li>
+        </ul> <p>
+            <strong>Mobile & Cross-Platform Development</strong>Proficient in Flutter and Android,
+            I build seamless applications for iOS and Android. 
+            My Flutter expertise includes:
+          </p>
+            <ul>
+                <li>
+                     <strong>State Management</strong>
+                     Skilled in Riverpod and BloC, enabling scalable, organized apps.
+                </li>
+                <li>
+                    <strong>Firebase Integration:</strong>
+                    Expertise in Firestore, Firebase Auth, Cloud Messaging, and Analytics for secure, real-time, data-driven apps.
+                </li>
+                <li>
+                    <strong>API Integration:</strong>
+                    I create visually appealing and intuitive interfaces, leveraging custom widgets and animations to enhance user experience.
+                </li>
+                <li>
+                    <strong>Testing:</strong>
+                    Experienced in unit and widget testing to ensure app stability and quality.
+                </li>
+            </ul> 
+            <p>
+                <strong>Project Management & Development</strong>
+                From concept to delivery, I offer end-to-end project management, using agile practices and rigorous testing to meet deadlines and exceed expectations.
+            </p>
+           
+           
     </div>
+    <button class="see-more" (click)="toggleExpand()">
+      ...see {{ isExpanded ? "less" : "more" }}
+    </button>
+  </div>
 </div>

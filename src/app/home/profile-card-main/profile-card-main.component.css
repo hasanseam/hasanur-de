@@ -33,11 +33,20 @@
     gap: 8px;  /* Add gap between text elements */
 }
 
-.workplace {
+.workplace-container {
     flex:1;
     display: flex;  /* Enable flex display */
     flex-direction: column;
     gap: 8px;  /* Add gap between text elements */
+}
+.workplace{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.workplace img{
+    height: 30px;
 }
 .title{
     color: var(--text-secondary-color-home-profile);

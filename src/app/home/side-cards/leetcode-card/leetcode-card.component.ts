@@ -20,4 +20,8 @@ export class LeetcodeCardComponent {
   hideTooltip() {
     this.isTooltipVisible = false;
   }
+
+  navigateToLeetcode() {
+    window.open('https://leetcode.com/u/hasanseam37/', '_blank');
+    }
 }

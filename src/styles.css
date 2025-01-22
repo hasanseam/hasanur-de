@@ -10,14 +10,14 @@ body{
 /*******ALL Linkedin GLobal CSS*******/
 :root{
     --primary-color-linkedin: #0a66c2;
-    --text-primary-linnkedin:#171717;
-    --text-secondary-linnkedin:#808080 ;
+    --text-primary-linkedin:#171717;
+    --text-secondary-linkedin:#808080 ;
     --border-color-linkedin-white:#cdcfd2;
 }
 .title{
     font-size: 20px;
     font-weight: 500;
-    color:var(--text-primary-linnkedin);
+    color:var(--text-primary-linkedin);
 }
 
 .card-shadow {

@@ -4,6 +4,7 @@
         padding: 2px;
         border-radius: 50%;
         object-fit: cover;
+        box-shadow: 0 0 0 1px rgba(0,0,0,.15);
     }
     
     .img-container{
@@ -44,7 +45,7 @@
     
     .view-more-btn{
         font-size: 12px;
-        background-color: #ffa116;
+        background-color: #1c8139;
         color: white;
         padding: 8px 12px;
         border: none;
@@ -54,9 +55,22 @@
     }
     
     .view-more-btn:hover{
-        background-color: #e68900;
+        background-color: #197433;
         cursor: pointer;
     }
+
+    .tooltip {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    pointer-events: none;
+    z-index: 1000;
+    transform: translate(10px, 10px);
+    white-space: nowrap;
+}
     
     </style>
     <div class="leetcode-card card-shadow" (mousemove)="showTooltip($event)" (mouseleave)="hideTooltip()">
@@ -66,13 +80,12 @@
                 <img src="/src/assets/github-mark.png" alt="">
             </div>
         </div>
-        <div class="title">Hasanur Seam</div>
-        <div class="short-details">Rank 1,254,234</div>
-        <div class="address">82/3430 Solved</div>
-        <div><button class="view-more-btn">View More</button></div>
+        <div class="title">Hasanur Jaman Seam</div>
+        <div class="short-details">103 contribution last year</div>
+        <div><button class="view-more-btn" (click)="navigateToGitHub()">View More</button></div>
         @if (isTooltipVisible) {
             <div class="tooltip" [style.left.px]="tooltipX" [style.top.px]="tooltipY">
-                LeetCode Profile
+                Github Profile
             </div>
         }
     </div>

@@ -1,0 +1,40 @@
+.education-card{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+}
+
+.title{
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--text-primary-linkedin);
+}
+.education-card-subpart{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 14px;
+
+}
+.uni-brand img{
+    height: 30px;
+}
+.uni-name{
+    font-weight: 600;
+    font-size: 16px;
+}
+.uni-card{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.details{
+    color: var(--text-secondary-linkedin);
+}
+.uni-name-date-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1;
+}

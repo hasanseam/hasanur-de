@@ -1,14 +1,15 @@
 import { Component, HostListener } from '@angular/core';
 import { HeaderLinkedinComponent } from './header-linkedin/header-linkedin.component';
 import { ProfileCardComponent } from './profile-card/profile-card.component';
-import { SuggestionProfileCardComponent } from './suggestion-profile-card/suggestion-profile-card.component';
 import { ExperienceCardComponent } from "./experience-card/experience-card.component";
+import { EducationCardComponent } from "./education-card/education-card.component";
+import { LicenseCardComponent } from "./license-card/license-card.component";
 
 @Component({
   selector: 'app-linkedin-profile',
   imports: [HeaderLinkedinComponent,
     ProfileCardComponent,
-    SuggestionProfileCardComponent, ExperienceCardComponent],
+    ExperienceCardComponent, EducationCardComponent, LicenseCardComponent],
   templateUrl: './linkedin-profile.component.html',
   styleUrl: './linkedin-profile.component.css'
 })
@@ -22,7 +23,5 @@ export class LinkedinProfileComponent {
       header?.classList.remove('scrolled');
     }
   }
-
-
 
 }

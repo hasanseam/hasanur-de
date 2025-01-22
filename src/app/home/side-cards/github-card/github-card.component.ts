@@ -20,4 +20,8 @@ export class GithubCardComponent {
   hideTooltip() {
     this.isTooltipVisible = false;
   }
+
+  navigateToGitHub(){
+    window.open('https://github.com/hasanseam','_blank');
+  }
 }
