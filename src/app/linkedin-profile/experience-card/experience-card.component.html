@@ -1,1 +1,121 @@
-<p>experience-card works!</p>
+<style>
+    .experience-card{
+        padding: 20px;
+    }
+
+    .experience-details{
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+    }
+
+    .experience{
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .experience img{
+        height: 50px;
+    }
+
+    .experience-title{
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .timeline , .place {
+        color: var(--text-secondary-linkedin);
+    }
+
+    .description{
+        margin-top: 15px;
+    }
+
+    hr {
+    border: 0;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.08);
+    margin: 16px 0;
+}
+
+</style>
+<div class="experience-card card-shadow">
+    <div class="title">
+        Experience
+    </div>
+    <div class="experience">
+        <img src="/src/assets/uni-bremen-monogram.png" alt="workplace">
+        <div class="experience-details">
+            <div class="experience-title">
+                Student Assistant Software Development
+            </div>
+            <div class="experience-place">University of Bremen</div>
+            <div class="timeline">
+                Feb 2020 - Sep 2023
+            </div>
+            <div class="place">Bremen, Germany</div>
+            <div class="description">
+                <div><strong>Project 1</strong></div>
+                <div>
+                    <ul>
+                        <li>
+                            Developed a web application to demonstrate a prototype of security architecture for portcommunication networks.
+                        </li>
+                        <li>
+                            Designed and implemented a REST API using Node.js (Express) to manage and process communication data.
+                        </li>
+                        <li>
+                            Built a user-friendly web interface with Angular to display real-time data and visualize security metrics.
+                        </li>
+                    </ul>
+                </div>
+                <div><strong>Project 2</strong></div>
+                <div>
+                    <ul>
+                        <li>
+                            Built a web application based on a Ph.D. research idea, designing and developing a REST API with Spring Boot to handle complex backend logic.
+                        </li>
+                        <li>
+                            Created a dynamic web interface using Angular to interact with the API
+                        </li>
+                        <li>
+                            Utilized MongoDB, PostgreSQL, and Docker for database management and containerization to enhance the application’s performance and scalability.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="experience">
+        <img src="/src/assets/azolve-monogram.jpg" alt="workplace">
+        <div class="experience-details">
+            <div class="experience-title">
+                Junior Software Engineer
+            </div>
+            <div class="experience-place">Azolve Technology Bangladesh</div>
+            <div class="timeline">
+                March 2018 - August 2019
+            </div>
+            <div class="place">Dhaka,Bangladesh</div>
+            <div class="description">
+                    <ul>
+                        <li>
+                            Analyzed user requirements and developed customized software solutions to meet client needs.
+                        </li>
+                        <li>
+                            Maintained and optimized existing systems, fixing software defects and ensuring smooth operation.
+                        </li>
+                        <li>
+                            Utilized .NET Framework, JavaScript, SQL Server, and Report Builder to deliver efficient software solutions.
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+    <div>
+    </div>
+</div>
