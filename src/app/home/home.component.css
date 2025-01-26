@@ -4,6 +4,7 @@
     margin: 0 auto;
     flex-direction: row;
     gap: 40px;
+    padding: 0 16px;
 }
 
 .main-profile-cards {
@@ -14,24 +15,63 @@
     flex: 1;
     display: flex;
     flex-direction: column;
+    gap: 15px;
 }
 
-.row{
+.row {
     display: flex;
     flex-direction: row;
+    gap: 15px;
 }
 
-app-linkedin-card{
-    flex: 1;
-}
-app-leetcode-card{
+app-linkedin-card {
     flex: 1;
 }
 
-app-github-card{
-    flex:1;
+app-leetcode-card {
+    flex: 1;
 }
 
-.dummy{
+app-github-card {
     flex: 1;
+}
+
+.dummy {
+    flex: 1;
+}
+
+/* Responsive breakpoints */
+@media screen and (max-width: 1024px) {
+    .container {
+        max-width: 100%;
+        gap: 24px;
+    }
+    .row{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .main-profile-cards {
+        flex: 1;
+    }
+
+    .other-profile-cards {
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .container {
+        padding: 0 12px;
+        gap: 16px;
+    }
 }
