@@ -25,9 +25,7 @@ showTooltip(event: MouseEvent) {
   this.tooltipX = event.clientX;
   this.tooltipY = event.clientY;
 }
-
 hideTooltip() {
   this.isTooltipVisible = false;
 }
-
 }
