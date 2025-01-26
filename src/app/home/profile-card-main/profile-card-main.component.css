@@ -11,7 +11,6 @@
 
 .profile-card {
     width: 100%;
-    min-width: 600px;
     margin: 10px 0px;
     border-radius: 8px;
     overflow: hidden;
@@ -102,9 +101,11 @@
     .profile-img-container {
         top: 85px;
     }
+    
 }
 
 @media screen and (max-width: 576px) {
+
     .workplace {
         font-size: 14px;
     }
@@ -130,5 +131,11 @@
     .profile-img-container {
         top: 70px;
         left :50px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .profile-card {
+        min-width: 600px;
     }
 }
